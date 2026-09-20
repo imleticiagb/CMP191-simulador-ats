@@ -1,4 +1,4 @@
-# Simulador de ATS 💗
+# Simulador de ATS 
 
 Simulador de análise de currículo com **transparência algorítmica**. A pessoa cola (ou envia em PDF) o
 currículo, cola a vaga e recebe:
@@ -10,8 +10,6 @@ currículo, cola a vaga e recebe:
 
 A interface é em rosa e roxo, com corações e a fonte Tropi Land nos títulos. O texto original é em português do
 Brasil, com tradução opcional para inglês e espanhol pelas bandeirinhas (BR, US e ES).
-
-> Isto é uma simulação educativa. Não representa o resultado de nenhum sistema de recrutamento real.
 
 ## Passo a passo para rodar
 
@@ -139,3 +137,11 @@ specs/                    # especificação, plano, tarefas e contratos (Spec Ki
 - **PyMuPDF**: AGPL-3.0. Adequado a um trabalho acadêmico não publicado. Para publicar, troque por `pdfplumber` (MIT).
 - **Lora**: SIL Open Font License (`static/fonts/Lora-OFL.txt`).
 - Bandeiras em SVG desenhadas para este projeto.
+
+***
+## Walkthrough
+![print1](https://i.imgur.com/gaOulSP.png)
+![print2](https://i.imgur.com/8XGlVv6.png)
+![print3](https://i.imgur.com/cHS3rNi.png)
+![print4](https://i.imgur.com/O42pbrE.png)
+![print5](https://i.imgur.com/26LGGB6.png)
