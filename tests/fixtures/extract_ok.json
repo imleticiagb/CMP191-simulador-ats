@@ -1,0 +1,36 @@
+{
+  "document_check": {
+    "looks_like_job_posting": true,
+    "language": "pt"
+  },
+  "requirements": [
+    {
+      "id": "R1",
+      "text": "Licenciatura em curso",
+      "kind": "formacao",
+      "importance": "obrigatorio",
+      "source_excerpt": "Licenciatura em curso"
+    },
+    {
+      "id": "R2",
+      "text": "Experiência com atendimento ao cliente",
+      "kind": "experiencia",
+      "importance": "obrigatorio",
+      "source_excerpt": "Experiência com atendimento ao cliente"
+    },
+    {
+      "id": "R3",
+      "text": "Domínio de pacote Office",
+      "kind": "habilidade_tecnica",
+      "importance": "obrigatorio",
+      "source_excerpt": "Domínio de pacote Office"
+    },
+    {
+      "id": "R4",
+      "text": "Inglês intermediário",
+      "kind": "idioma",
+      "importance": "desejavel",
+      "source_excerpt": "Inglês intermediário"
+    }
+  ]
+}

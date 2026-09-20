@@ -1,0 +1,134 @@
+[
+  {
+    "id": "C01",
+    "requirement": "Licenciatura em curso",
+    "resume_excerpt": "Licenciatura em Letras concluída em 2021.",
+    "expected_status": "atendido"
+  },
+  {
+    "id": "C02",
+    "requirement": "Ensino superior completo",
+    "resume_excerpt": "Bacharel em Administração, formado em 2019.",
+    "expected_status": "atendido"
+  },
+  {
+    "id": "C03",
+    "requirement": "Graduação em andamento",
+    "resume_excerpt": "Graduação em Engenharia concluída em 2020.",
+    "expected_status": "atendido"
+  },
+  {
+    "id": "C04",
+    "requirement": "Inglês intermediário",
+    "resume_excerpt": "Inglês avançado (certificado C1).",
+    "expected_status": "atendido"
+  },
+  {
+    "id": "C05",
+    "requirement": "Experiência com atendimento ao cliente",
+    "resume_excerpt": "Trabalhei 3 anos como atendente de call center.",
+    "expected_status": "atendido"
+  },
+  {
+    "id": "C06",
+    "requirement": "Domínio de pacote Office",
+    "resume_excerpt": "Uso diário de Excel, Word e PowerPoint.",
+    "expected_status": "atendido"
+  },
+  {
+    "id": "C07",
+    "requirement": "Conhecimento em Python",
+    "resume_excerpt": "Desenvolvimento de scripts em Python para análise de dados.",
+    "expected_status": "atendido"
+  },
+  {
+    "id": "C08",
+    "requirement": "Experiência com banco de dados relacional",
+    "resume_excerpt": "Modelagem e consultas em PostgreSQL e MySQL.",
+    "expected_status": "atendido"
+  },
+  {
+    "id": "C09",
+    "requirement": "Comunicação em equipe",
+    "resume_excerpt": "Liderei um grupo de 5 pessoas em projetos colaborativos.",
+    "expected_status": "parcial"
+  },
+  {
+    "id": "C10",
+    "requirement": "Experiência com vendas",
+    "resume_excerpt": "Participei de ações de divulgação de produtos em eventos.",
+    "expected_status": "parcial"
+  },
+  {
+    "id": "C11",
+    "requirement": "Curso técnico em enfermagem",
+    "resume_excerpt": "Estudante de enfermagem, 3º semestre.",
+    "expected_status": "parcial"
+  },
+  {
+    "id": "C12",
+    "requirement": "Certificação PMP",
+    "resume_excerpt": "Curso introdutório de gestão de projetos.",
+    "expected_status": "parcial"
+  },
+  {
+    "id": "C13",
+    "requirement": "Espanhol fluente",
+    "resume_excerpt": "Conversação básica em espanhol.",
+    "expected_status": "parcial"
+  },
+  {
+    "id": "C14",
+    "requirement": "Experiência com logística",
+    "resume_excerpt": "Formada em Letras, com experiência em revisão de textos.",
+    "expected_status": "nao_atendido"
+  },
+  {
+    "id": "C15",
+    "requirement": "Certificação em segurança do trabalho",
+    "resume_excerpt": "Experiência com atendimento ao público.",
+    "expected_status": "nao_atendido"
+  },
+  {
+    "id": "C16",
+    "requirement": "Conhecimento em Java",
+    "resume_excerpt": "Trabalho com design gráfico e ilustração.",
+    "expected_status": "nao_atendido"
+  },
+  {
+    "id": "C17",
+    "requirement": "Experiência com contabilidade",
+    "resume_excerpt": "Atuação em recepção e agenda de clientes.",
+    "expected_status": "nao_atendido"
+  },
+  {
+    "id": "C18",
+    "requirement": "Alemão avançado",
+    "resume_excerpt": "Inglês e espanhol intermediários.",
+    "expected_status": "nao_atendido"
+  },
+  {
+    "id": "C19",
+    "requirement": "Habilitação categoria B",
+    "resume_excerpt": "Sem informações sobre habilitação.",
+    "expected_status": "nao_atendido"
+  },
+  {
+    "id": "C20",
+    "requirement": "Mestrado concluído",
+    "resume_excerpt": "Graduação em História concluída em 2018.",
+    "expected_status": "nao_atendido"
+  },
+  {
+    "id": "C21",
+    "requirement": "Experiência com Excel avançado",
+    "resume_excerpt": "Planilhas com tabelas dinâmicas e macros em Excel.",
+    "expected_status": "atendido"
+  },
+  {
+    "id": "C22",
+    "requirement": "Trabalho em equipe",
+    "resume_excerpt": "Colaborei com times de diferentes áreas em projetos de melhoria.",
+    "expected_status": "atendido"
+  }
+]

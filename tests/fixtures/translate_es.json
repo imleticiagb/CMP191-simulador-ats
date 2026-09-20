@@ -1,0 +1,21 @@
+{
+  "target_language": "es",
+  "items": [
+    {
+      "key": "R1.text",
+      "text": "[ES] Licenciatura en curso"
+    },
+    {
+      "key": "R1.justification",
+      "text": "[ES] Ya terminaste la licenciatura."
+    },
+    {
+      "key": "R2.text",
+      "text": "[ES] Experiencia en atención al cliente"
+    },
+    {
+      "key": "R2.justification",
+      "text": "[ES] Tu currículum menciona atención al cliente."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "simulador-ats"
+version = "0.1.0"
+description = "Simulador de análise de currículo com explicabilidade e tema rosa e roxo"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.40",
+    "pymupdf>=1.24",
+    "google-genai>=1.0",
+    "pydantic>=2.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.5",
+    "fonttools>=4.50",
+    "jsonschema>=4",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ats"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-m 'not live'"
+markers = [
+    "live: testes que chamam o modelo real e exigem GEMINI_API_KEY",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/ats/ui/theme.py" = ["E501"]
+"src/ats/ui/components/hearts.py" = ["E501"]
+"src/ats/analysis/prompts.py" = ["E501"]
+"src/ats/analysis/llm_client.py" = ["E501"]
+"src/ats/ui/components/score_bar.py" = ["E501"]
+"tests/**" = ["E501"]

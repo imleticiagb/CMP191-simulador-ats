@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "llm-translate",
+  "title": "Resposta do LLM: tradução dos textos explicativos",
+  "description": "Saída da chamada 3. A entrada é uma lista de pares chave/texto em pt-BR; a saída devolve as mesmas chaves, na mesma ordem, no idioma pedido. Chaves faltantes ou extras são tratadas em código.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["target_language", "items"],
+  "properties": {
+    "target_language": { "type": "string", "enum": ["en", "es"] },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "text"],
+        "properties": {
+          "key": { "type": "string" },
+          "text": { "type": "string" }
+        }
+      }
+    }
+  }
+}

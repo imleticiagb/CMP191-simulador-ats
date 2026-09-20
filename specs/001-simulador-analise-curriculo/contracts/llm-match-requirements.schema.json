@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "llm-match-requirements",
+  "title": "Resposta do LLM: julgamento dos requisitos contra o currículo",
+  "description": "Saída da chamada 2 (uma por currículo ou por chunk). Enumerações fechadas para reduzir a variação. Os trechos de 'evidence' precisam ser literais; a verificação é feita em código.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_check", "verdicts"],
+  "properties": {
+    "document_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["looks_like_resume", "language"],
+      "properties": {
+        "looks_like_resume": { "type": "boolean" },
+        "language": { "type": "string", "enum": ["pt", "en", "es", "other"] }
+      }
+    },
+    "verdicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["requirement_id", "status", "evidence", "deduction_type", "certainty", "justification"],
+        "properties": {
+          "requirement_id": { "type": "string" },
+          "status": { "type": "string", "enum": ["atendido", "parcial", "nao_atendido"] },
+          "evidence": { "type": "array", "items": { "type": "string" } },
+          "deduction_type": {
+            "type": "string",
+            "enum": ["correspondencia_exata", "sinonimo", "termo_relacionado", "nivel_superior", "equivalencia_contextual", "sem_evidencia"]
+          },
+          "certainty": { "type": "string", "enum": ["alta", "media", "baixa"] },
+          "justification": { "type": "string" }
+        }
+      }
+    }
+  }
+}

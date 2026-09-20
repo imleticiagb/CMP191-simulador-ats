@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "llm-extract-requirements",
+  "title": "Resposta do LLM: extração de requisitos da vaga",
+  "description": "Saída da chamada 1. Mantido no subconjunto de JSON Schema aceito por saída estruturada (sem limites numéricos nem de tamanho); limites como quantidade de itens são validados em código.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_check", "requirements"],
+  "properties": {
+    "document_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["looks_like_job_posting", "language"],
+      "properties": {
+        "looks_like_job_posting": { "type": "boolean" },
+        "language": { "type": "string", "enum": ["pt", "en", "es", "other"] }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "text", "kind", "importance", "source_excerpt"],
+        "properties": {
+          "id": { "type": "string" },
+          "text": { "type": "string" },
+          "kind": {
+            "type": "string",
+            "enum": ["formacao", "experiencia", "habilidade_tecnica", "habilidade_comportamental", "idioma", "certificacao", "outro"]
+          },
+          "importance": { "type": "string", "enum": ["obrigatorio", "desejavel"] },
+          "source_excerpt": { "type": "string" }
+        }
+      }
+    }
+  }
+}

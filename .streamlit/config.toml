@@ -1,0 +1,21 @@
+[server]
+enableStaticServing = true
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+primaryColor = "#6D28D9"
+backgroundColor = "#FFF0F6"
+secondaryBackgroundColor = "#F5F0FF"
+textColor = "#2D0B55"
+font = "Lora"
+headingFont = "Tropi Land"
+
+[[theme.fontFaces]]
+family = "Tropi Land"
+url = "app/static/fonts/TropiLand-Demo.ttf"
+
+[[theme.fontFaces]]
+family = "Lora"
+url = "app/static/fonts/Lora.ttf"

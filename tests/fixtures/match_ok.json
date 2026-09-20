@@ -1,0 +1,46 @@
+{
+  "document_check": {
+    "looks_like_resume": true,
+    "language": "pt"
+  },
+  "verdicts": [
+    {
+      "requirement_id": "R1",
+      "status": "atendido",
+      "evidence": [
+        "Licenciatura em Pedagogia, concluída em 2022, pela Universidade Federal de Minas."
+      ],
+      "deduction_type": "nivel_superior",
+      "certainty": "alta",
+      "justification": "Você já concluiu a licenciatura, o que cumpre o que se pede a quem a está cursando."
+    },
+    {
+      "requirement_id": "R2",
+      "status": "atendido",
+      "evidence": [
+        "Atendente de loja por 3 anos, com atendimento ao cliente presencial e por telefone."
+      ],
+      "deduction_type": "correspondencia_exata",
+      "certainty": "alta",
+      "justification": "O seu currículo cita atendimento ao cliente por 3 anos."
+    },
+    {
+      "requirement_id": "R3",
+      "status": "atendido",
+      "evidence": [
+        "Excel, Word e PowerPoint no dia a dia."
+      ],
+      "deduction_type": "sinonimo",
+      "certainty": "media",
+      "justification": "Excel, Word e PowerPoint fazem parte do pacote Office."
+    },
+    {
+      "requirement_id": "R4",
+      "status": "nao_atendido",
+      "evidence": [],
+      "deduction_type": "sem_evidencia",
+      "certainty": "alta",
+      "justification": ""
+    }
+  ]
+}
